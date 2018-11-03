@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Azonix;
+    src: url('../fonts/Azonix.otf');
+}
+
+body {
+    font-family: 'Krub', sans-serif;
+    background-color: #080808;
+}
+
+#landingPage {
+    background-image: url("../images/background.png");
+    height: 100vh;
+}
+
+h1 {
+    font-family: Delicious, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+    font-size: 3.7vw;
+    letter-spacing: 0.7vw;
+    background: -webkit-linear-gradient(#d7d7d7, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo_wrapper {
+    display: block;
+    text-align: center;
+    padding-top: 7%;
+}
+
+.logo_large {
+    width: 25vw;
+}
+
+nav {
+    position: fixed;
+    top: 10px;
+    right: 0;
+}
+
+nav ul {
+    text-align: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1.2vw;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: orange;
+    padding: 10px;
+}
+
+@media only screen and (max-width: 650px) {
+    h1 {
+        font-size: 2em;
+        letter-spacing: 5px;
+    }
+
+    .logo_large {
+        width: 50vw;
+    }
+
+    nav {
+        display: block;
+        position: static;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    nav ul li {
+        display: block;
+        color: white;
+        text-align: left;
+        margin: 10px 5px;
+    }
+
+    nav ul li a {
+        padding: 2px;
+    }
+
+    nav ul li a:hover {
+        padding: 2px;
+    }
+}
