@@ -2,7 +2,6 @@
     font-family: Azonix;
     src: url('../fonts/Azonix.otf');
 }
-
 body {
     font-family: 'Krub', sans-serif;
     background-color: #080808;
@@ -14,7 +13,7 @@ body {
 }
 
 h1 {
-    font-family: Delicious, sans-serif;
+    font-family: Azonix, sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: white;
@@ -25,6 +24,11 @@ h1 {
     -webkit-text-fill-color: transparent;
 }
 
+h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 20px;
+}
 .sidenav {
     height: 100%;
     width: 0;
@@ -32,7 +36,7 @@ h1 {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color #111;
+    background-color: #111;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -46,7 +50,6 @@ h1 {
     display: block;
     transition: 0.3s;
 }
-
 .sidenav a:hover {
     color: #f1f1f1;
 }
@@ -59,6 +62,64 @@ h1 {
     margin-left: 50px;
 }
 
+fieldset {
+    margin-top: 20px;
+}
+
+fieldset p {
+    margin-bottom: 8px;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+textarea {
+    display: block;
+    width: 49.7vw;
+    resize: vertical;
+    border-radius: 4px;
+
+}
+
+input[type=submit] {
+    display: block;
+    width: 50%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.form_wrapper {
+    width: 50vw;
+    margin: 5vh auto 0;
+}
+
+.white {
+    background-color: white;
+}
+
+/*PHONE VERSION*/
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
@@ -69,24 +130,32 @@ h1 {
     text-align: center;
     padding-top: 7%;
 }
-
 .logo_large {
     width: 25vw;
 }
 
 nav {
     position: fixed;
-    top: 10px;
+    top: 0px;
     right: 0;
 }
 
 nav ul {
+    padding: 10px 10px 10px 5px;
+    margin: 0 1300px 0 0;
+    width: 100%;
     text-align: right;
+    overflow: hidden;
+    background-color: #333;
 }
-
 nav ul li {
     display: inline;
     margin-right: 1.2vw;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
 }
 
 nav ul li a {
@@ -102,6 +171,17 @@ nav ul li a:hover {
 }
 
 @media only screen and (max-width: 650px) {
+    .form_wrapper {
+        width: 100vw;
+    }
+
+    textarea {
+        display: block;
+        width: 99vw;
+        resize: vertical;
+        border-radius: 4px;
+
+    }
     h1 {
         font-size: 2em;
         letter-spacing: 5px;
