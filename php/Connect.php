@@ -8,10 +8,16 @@
 
 class Connect
 {
-    private $servername = "fdb22.awardspace.net";
+    /*private $servername = "fdb22.awardspace.net";
     private $username = "2869875_phyrostudios";
     private $password = "Phyrostudios556";
     private $dbname = "2869875_phyrostudios";
+    private $table = "applications";*/
+
+    private $servername = "localhost";
+    private $username = "root";
+    private $password = "";
+    private $dbname = "phyrostudios";
     private $table = "applications";
     private $connected = false;
     private $connection;
